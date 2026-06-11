@@ -1,26 +1,30 @@
 export enum Colors {
-    PRIMARY = "#0055FF",
-    PRIMARY_LIGHT = "#4D88FF",
-    PRIMARY_DARK = "#003BB5",
 
-    SECONDARY = "#FF7A00",
+    PRIMARY = "#0070f3",
+  PRIMARY_DARK = "#005cc5",
+  SECONDARY = "#1a1a1a",
 
-    SUCCESS = "#22C55E",
-    WARNING = "#F59E0B",
-    ERROR = "#EF4444",
-    INFO = "#3B82F6",
+  BACKGROUND = "#ffffff",
+  SURFACE = "#f8f9fa",
 
-    WHITE = "#FFFFFF",
-    BLACK = "#000000",
+  TEXT_PRIMARY = "#212121",
+  TEXT_SECONDARY = "#999999",
 
-    GREY_50 = "#F9FAFB",
-    GREY_100 = "#F3F4F6",
-    GREY_200 = "#E5E7EB",
-    GREY_300 = "#D1D5DB",
-    GREY_400 = "#9CA3AF",
-    GREY_500 = "#6B7280",
-    GREY_600 = "#4B5563",
-    GREY_700 = "#374151",
-    GREY_800 = "#1F2937",
-    GREY_900 = "#111827",
+  BORDER = "#eeeeee",
+  TEXT_INPUT_BORDER = "#dddddd",
+
+  SUCCESS = "#00ff00",
+  WARNING = "#ffa500",
+  ERROR = "#ff0000",
+
+  HEADER = "#1976d2",
+  HEADER_SUBTITLE = "#ffffffb3",
+  CHAT_INPUT = "#e0e0e0",
+  CHAT_BUBBLE = "#212121",
+  BUTTON_PRIMARY = "#007AFF",
+  BADGE = "#007AFF",
+
+  BLACK = "#000000",
+  LIGHT_GRAY = "#00000005",
+  WHITE_TRANSPARENT = "#ffffff26",
 }

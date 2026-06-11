@@ -29,8 +29,6 @@ The main objectives of the ET3 Library were:
 - CommonJS modules (CJS)
 - TypeScript declaration files (`.d.ts`)
 
----
-
 ## Package Registry
 
 - GitHub Packages
@@ -246,43 +244,6 @@ A successful publication was achieved under the personal GitHub scope:
 @mahmoudalhajj/designer-library@1.0.0
 ```
 
----
-
-# Challenges Encountered
-
-## TypeScript 6 Compatibility
-
-Issue:
-
-```text
-Option 'baseUrl' is deprecated...
-```
-
-Resolution:
-
-- Downgraded TypeScript to version 5.9.x.
-
----
-
-## GitHub Organization Permissions
-
-Issue:
-
-```text
-permission_denied: create_package
-```
-
-Cause:
-
-- Insufficient permissions to publish under the ET3 GitHub organization.
-
-Resolution:
-
-- Published under a personal GitHub scope to validate the process.
-- Identified the need for organization-level permissions for future ET3 deployment.
-
----
-
 # How to Run the Library
 
 ## Install Dependencies
@@ -299,22 +260,6 @@ npm install
 npm run build
 ```
 
----
-
-## Publish Updates
-
-Increase the version:
-
-```bash
-npm version patch
-```
-
-or
-
-```bash
-npm version minor
-```
-
 Publish:
 
 ```bash
@@ -323,7 +268,7 @@ npm publish
 
 ---
 
-# How to Consume the Library
+# How to Use the Library
 
 Configure authentication:
 
