@@ -3,17 +3,18 @@ name: Publish Package
 on:
   push:
     tags:
-      - "v*"   # triggers on v1.0.0, v1.1.0, etc.
+      - "v*"
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write        
+      packages: write
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: "18"
@@ -21,7 +22,11 @@ jobs:
           scope: "@your-org"
 
       - run: npm ci
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - run: npm run build
+
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # auto-provided, no setup needed
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
