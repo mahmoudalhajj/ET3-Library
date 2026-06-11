@@ -1,17 +1,25 @@
 {
-  "name": "@et3/designer-library",
+  "name": "@mahmoudalhajj/designer-library",
   "version": "1.0.0",
-  "description": "Shared designer library for ET3 applications",
+  "description": "Shared ET3 design system",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+
   "files": [
     "dist"
   ],
+
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean"
   },
+
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^5.9.2"
